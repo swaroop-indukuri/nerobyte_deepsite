@@ -27,12 +27,12 @@
                     <a href="#contact" class="nav-link px-3 py-2 font-medium">Contact</a>
                     <!-- Theme Toggle -->
                     <div class="flex items-center">
-                        <span class="mr-2 text-sm font-medium">Classic</span>
+                        <span class="mr-2 text-sm font-medium"><b>Light</b></span>
                         <div class="relative inline-block w-12 mr-2 align-middle select-none">
                             <input type="checkbox" id="theme-toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
                             <label for="theme-toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
                         </div>
-                        <span class="text-sm font-medium">Premium</span>
+                        <span class="text-sm font-medium"><b>Dark</b></span>
                     </div>
                 </nav>
 
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div class="md:w-1/2 flex justify-center">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tech Solutions" class="rounded-lg shadow-2xl max-w-full h-auto">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tech Solutions" class="rounded-lg shadow-2xl max-w-full h-auto floating-img">
                     </div>
                 </div>
             </div>
@@ -84,8 +84,8 @@
                 </div>
                 
                 <div class="flex flex-col md:flex-row items-center mb-16">
-                    <div class="md:w-1/2 mb-10 md:mb-0">
-                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Founder" class="rounded-lg shadow-lg max-w-full h-auto">
+                    <div class="md:w-1/4 mb-10 md:mb-0">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Founder" class="rounded-lg shadow-lg max-w-full h-auto floating-img">
                     </div>
                     <div class="md:w-1/2 md:pl-12">
                         <h3 class="text-2xl font-bold mb-4">Our Founder</h3>
@@ -413,15 +413,23 @@
         <i class="fas fa-arrow-up"></i>
     </a>
 
-    <!-- Fixed Contact Buttons (Mobile) -->
-    <div class="fixed-contact-buttons flex flex-col space-y-3">
-        <a href="tel:+11234567890" class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition duration-300">
-            <i class="fas fa-phone text-white text-xl"></i>
-        </a>
-        <a href="https://wa.me/911234567890?text=Hi%20I%20am%20interested%20in%20your%20services" class="w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-600 transition duration-300">
-            <i class="fab fa-whatsapp text-white text-2xl"></i>
-        </a>
-    </div>
+ <div class="fixed-contact-buttons flex flex-col space-y-3">
+    <!-- Phone Button (No Shadow) -->
+    <a href="tel:+11234567890">
+        <img src="telephone.jpg" 
+             alt="Call Us" 
+             class="w-14 h-14 rounded-full transition duration-300 hover:scale-105">
+    </a>
+
+    <!-- WhatsApp Button (With Shadow) -->
+    <a href="https://wa.me/911234567890?text=Hi%20I%20am%20interested%20in%20your%20services" target="_blank">
+        <img src="whatsapp.png" 
+             alt="Chat on WhatsApp" 
+             class="w-14 h-14 rounded-full transition duration-300 hover:scale-105">
+    </a>
+ </div>
+
+
 
     <script src="script.js"></script>
 </body>

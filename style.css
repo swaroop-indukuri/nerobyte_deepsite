@@ -1,0 +1,53 @@
+/* Custom CSS for elements that need more styling than Tailwind provides */
+.gradient-bg {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.back-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    display: none;
+    z-index: 99;
+}
+.fixed-contact-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    display: none;
+}
+@media (max-width: 768px) {
+    .fixed-contact-buttons {
+        display: flex;
+    }
+}
+.nav-link {
+    position: relative;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #4f46e5;
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+.toggle-checkbox:checked {
+    right: 0;
+    border-color: #4f46e5;
+}
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #4f46e5;
+}
+.padd{
+    right-padding: 2rem;
+}

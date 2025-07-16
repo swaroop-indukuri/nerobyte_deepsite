@@ -1,4 +1,8 @@
 /* Custom CSS for elements that need more styling than Tailwind provides */
+.floating-img {
+    animation: float 6s ease-in-out infinite;
+    filter: none;
+}
 .gradient-bg {
     background: linear-gradient(135deg, #6e8efb, #a777e3);
 }
@@ -53,10 +57,6 @@
     background-color: #4f46e5;
 }
 
-.floating-img {
-    animation: float 6s ease-in-out infinite;
-    filter: none;
-}
 
 @keyframes float {
     0% {

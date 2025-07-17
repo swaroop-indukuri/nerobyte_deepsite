@@ -4,6 +4,32 @@ document.getElementById('mobile-menu-button').addEventListener('click', function
     menu.classList.toggle('hidden');
 });
 
+// 🔄 Services Tab Switch
+const classicBtn = document.getElementById('classic-btn');
+const premiumBtn = document.getElementById('premium-btn');
+const classicServices = document.getElementById('classic-services');
+const premiumServices = document.getElementById('premium-services');
+
+if (classicBtn && premiumBtn) {
+    classicBtn.addEventListener('click', function() {
+        classicBtn.classList.add('bg-indigo-600', 'text-white');
+        classicBtn.classList.remove('bg-white', 'text-indigo-600', 'border');
+        premiumBtn.classList.add('bg-white', 'text-indigo-600', 'border');
+        premiumBtn.classList.remove('bg-indigo-600', 'text-white');
+        classicServices.classList.remove('hidden');
+        premiumServices.classList.add('hidden');
+    });
+
+    premiumBtn.addEventListener('click', function() {
+        premiumBtn.classList.add('bg-indigo-600', 'text-white');
+        premiumBtn.classList.remove('bg-white', 'text-indigo-600', 'border');
+        classicBtn.classList.add('bg-white', 'text-indigo-600', 'border');
+        classicBtn.classList.remove('bg-indigo-600', 'text-white');
+        premiumServices.classList.remove('hidden');
+        classicServices.classList.add('hidden');
+    });
+}
+
 // 📩 Form Submission with Backend
 document.addEventListener('DOMContentLoaded', function () {
     const contactForm = document.getElementById('contact-form');
@@ -121,3 +147,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
